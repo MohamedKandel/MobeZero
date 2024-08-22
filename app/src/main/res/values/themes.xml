@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MobeZero" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <style name="Theme.MobeZero" parent="Base.Theme.MobeZero" />
+
+    <style name="InputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">#7d8b9f</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="hintTextColor">#7d8b9f</item>
+    </style>
+
+</resources>

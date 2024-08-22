@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/contacts"
+        android:icon="@drawable/contact_icon"
+        android:id="@+id/contacts_item" />
+
+    <item android:id="@+id/placeholder"
+        android:title=""/>
+
+    <item android:title="@string/calls"
+        android:icon="@drawable/phone_icon"
+        android:id="@+id/calls_item" />
+</menu>

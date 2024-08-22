@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.correct.mobezero.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.correct.mobezero.ui.getStarted.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.correct.mobezero.ui.getStarted.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/dialFragment"
+        android:name="com.correct.mobezero.ui.home.DialFragment"
+        android:label="fragment_dial"
+        tools:layout="@layout/fragment_dial" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.correct.mobezero.ui.home.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.correct.mobezero.ui.home.CallsFragment"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_calls" />
+</navigation>

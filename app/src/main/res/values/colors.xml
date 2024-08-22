@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2A47A4</color>
+    <color name="lightBlue">#CD2A47A4</color>
+    <color name="alphaBlue">#9A2A47A4</color>
+    <color name="login_btn">#223983</color>
+    <color name="dark_blue">#101B3E</color>
+    <color name="alphaBlack">#80000000</color>
+    <color name="gray">#616161</color>
+    <color name="alphaWhite">#99FFFFFF</color>
+    <color name="dial_color">#11317C</color>
+    <color name="keyboard_color">#18275A</color>
+    <color name="alphabet_color">#8088878F</color>
+    <color name="green">#2E8237</color>
+    <color name="red_400">#ef5350</color>
+    <color name="end_call_color">#F64040</color>
+    <color name="green_400">#66bb6a</color>
+    <color name="green_800">#097e35</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="un_ready_color">#999999</color>
+</resources>

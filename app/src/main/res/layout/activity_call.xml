@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CallActivity">
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/get_started_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000" />
+
+    <RelativeLayout
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_64sdp"
+        android:background="@drawable/white_circle"
+        android:backgroundTint="#D9D9D9"
+        android:padding="@dimen/_100sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@id/circle"
+        app:layout_constraintEnd_toEndOf="@id/circle"
+        app:layout_constraintStart_toStartOf="@id/circle"
+        app:layout_constraintTop_toTopOf="@id/circle" />
+
+    <TextView
+        android:id="@+id/txt_caller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle" />
+
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barlow_regular"
+        android:gravity="center"
+        android:text="01234567890"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintTop_toBottomOf="@id/txt_caller_name" />
+
+    <TextView
+        android:id="@+id/txt_call_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_27sdp"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_number" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_call_status"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingEnd="@dimen/_22sdp">
+
+            <com.correct.mobezero.utils.ConstrainedDragAndDropView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/drag_drop_layout"
+                android:visibility="gone">
+
+                <com.skyfishjy.library.RippleBackground
+                    android:id="@+id/rippleBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rb_color="#80FFFFFF"
+                    app:rb_duration="3000"
+                    app:rb_radius="@dimen/_24sdp"
+                    app:rb_rippleAmount="4"
+                    app:rb_scale="6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/container_left"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/image_accept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/btn_normal" />
+
+                        <LinearLayout
+                            android:id="@+id/container_middle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/container_right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal"></LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.skyfishjy.library.RippleBackground>
+            </com.correct.mobezero.utils.ConstrainedDragAndDropView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_86sdp"
+                android:id="@+id/scrollView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/call_control_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dial_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/mute_icon"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_mute"
+                    app:layout_constraintStart_toStartOf="@+id/txt_mute"
+                    app:layout_constraintTop_toBottomOf="@id/btn_dial" />
+
+                <TextView
+                    android:id="@+id/txt_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/mute"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_mute" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/speaker_icon"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_speaker"
+                    app:layout_constraintStart_toStartOf="@+id/txt_speaker"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_dial" />
+
+                <TextView
+                    android:id="@+id/txt_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/speaker"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_speaker" />
+
+                <ImageButton
+                    android:id="@+id/btn_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hold_icon"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_hold"
+                    app:layout_constraintStart_toStartOf="@+id/txt_hold"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_dial" />
+
+                <TextView
+                    android:id="@+id/txt_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial"
+                    android:text="@string/hold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_speaker" />
+
+                <ImageButton
+                    android:id="@+id/btn_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:background="@drawable/white_circle"
+                    android:backgroundTint="@color/end_call_color"
+                    android:src="@drawable/end_phone_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_speaker" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

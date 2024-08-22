@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MobeZero</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts">Contacts</string>
+    <string name="calls">History Calls</string>
+    <string name="app_slogan">International calling</string>
+    <string name="get_started">Get Started</string>
+    <string name="accept_policy">By joining I accept MobeZero\'s Terms Of Service. To learn more about how application work visit our website.</string>
+    <string name="login">Login</string>
+    <string name="code">Code</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="callerID">Caller ID</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="call">Call</string>
+    <string name="search">Search</string>
+    <string name="history">Calls History</string>
+    <string name="fill_required">Please fill all required filed</string>
+
+    <string name="acct_registering">Trying to register</string>
+    <string name="acct_registered">Ready to call</string>
+
+
+    <string name="user_not_found">User Not Found</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="request_time_out">Request Time Out</string>
+    <string name="check_internet">Please Check Your Internet</string>
+    <string name="mute">Mute</string>
+    <string name="un_mute">Un-mute</string>
+    <string name="speaker">Mic</string>
+    <string name="hold">Hold</string>
+    <string name="un_hold">Resume call</string>
+
+    <string name="call_in_calling_state">Calling..</string>
+    <string name="call_ringing_state">Ringing..</string>
+    <string name="call_in_connecting_state">connecting..</string>
+    <string name="call_in_confirmed_state">Call Connected</string>
+    <string name="call_disconnected_by_caller">Call Disconnected..Please Wait</string>
+    <string name="call_disconnected_by_other_side">Call Disconnected..Please Wait</string>
+    <string name="not_found">User Not Found</string>
+
+    <string name="delete">Delete</string>
+</resources>
