@@ -248,13 +248,13 @@ class DialFragment : Fragment(), SIPService.OnSipAccountRegisterListener, Regist
                             val prm2 = CallOpParam()
                             prm2.statusCode = pjsip_status_code.PJSIP_SC_DECLINE
                             try {
-                                SipProfile.getInstance().call!!.hangup(prm2)
+                                SipProfile.getInstance().call.hangup(prm2)
                                 val target = "sip:${
                                     phoneNumber.trim()
                                 }@${userDefaults.get_SipIp()}"
 
                                 Log.v("target caller", target)
-                                SipProfile.getInstance()!!
+                                SipProfile.getInstance()
                                     .makeCall(target, requireActivity())
                                 userDefaults.lastDialedNumber =
                                     phoneNumber.trim()
@@ -302,7 +302,7 @@ class DialFragment : Fragment(), SIPService.OnSipAccountRegisterListener, Regist
     override fun onPause() {
         super.onPause()
         SipProfile.getInstance().removeRegisterListener()
-        if (Application.getInstance()!!.service != null) {
+        if (Application.getInstance().service != null) {
 //            Application.getInstance()!!.service!!.setRegisterListener(null)
             Application.getInstance().service.removeRegisterListener()
         } else {
